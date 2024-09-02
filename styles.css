@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+}
+
+.sergaTheBest {
+    display: block;
+    font-size: 8rem;
+    margin: auto;
+    animation: linear rotation 100s;
+    animation-play-state: running;
+}
+
+.visible {
+    display: flex !important;
+}
+
+.questions {
+    position: absolute;
+    transform: scale(0.9);
+    translate: 0 -15%;
+    animation: linear face 100s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes face {
+    from {
+        filter: opacity(0);
+    }
+
+    to {
+        filter: opacity(1);
+    }
+
+}
