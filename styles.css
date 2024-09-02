@@ -1,6 +1,6 @@
 body {
     background-image: url(bggif.gif);
-    /* background-size: px; */
+    /* background-size: 50px; */
     display: flex;
     justify-content: center;
     align-content: center;
@@ -18,11 +18,17 @@ audio {
     display: block;
     font-size: 8rem;
     margin: auto;
-    animation: 10s linear rotation infinite;
+    animation: 100s linear rotation infinite;
     animation-play-state: running;
     text-shadow: 5px 5px 20px #ffcc25;
     color: #ffcc25;
 
+}
+
+.zamost {
+    position: absolute;
+    background-image: url(serega.png);
+    background-size: 30px;
 }
 
 .visible {
@@ -34,7 +40,7 @@ audio {
     position: absolute;
     transform: scale(0.9);
     translate: 0 -15%;
-    animation: linear face 100s;
+    animation: 100s linear face infinite;
 }
 
 @keyframes rotation {
@@ -50,20 +56,17 @@ audio {
 @keyframes face {
     from {
         filter: opacity(0);
+        transform: rotate(0deg);
     }
 
-    to {
+    50% {
         filter: opacity(1);
-    }
-
-}
-
-@keyframes pulsation {
-    from {
-        transform: scale(1);
+        transform: rotate(-360deg);
     }
 
     to {
-        transform: scale(1.5);
+        filter: opacity(0);
+        transform: rotate(0deg);
     }
+
 }
