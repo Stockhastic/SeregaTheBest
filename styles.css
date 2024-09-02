@@ -1,17 +1,47 @@
 body {
     background-image: url(bggif.gif);
-    /* background-size: 50px; */
+    background-size: 200px;
     display: flex;
     justify-content: center;
     align-content: center;
     height: 100vh;
     top: 0;
     bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 audio {
-    position: absolute;
+    /* position: absolute; */
+    left: 1rem;
+    /* scale: 0.7; */
+    filter: opacity(1);
+    padding: 0.1rem;
+    /* translate: -18% 0; */
+}
+
+.songlist {
+    scale: 0.7;
+    filter: opacity(0.95);
+    border-radius: 20px;
+    background-color: #ffcc25;
     z-index: 10;
+    position: absolute;
+
+    left: -2%;
+    bottom: -2%;
+    /* width: 370px */
+}
+
+.songlist>h2 {
+    text-align: center;
+}
+
+.songlist__item {
+    padding: 0.4rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
 }
 
 .sergaTheBest {
@@ -25,18 +55,19 @@ audio {
 
 }
 
-.zamost {
+.orb {
     position: absolute;
-    background-image: url(serega.png);
-    background-size: 30px;
-}
+    background-color: #ffffff;
+    width: 60%;
+    height: 80%;
+    border-radius: 100%;
+    translate: 0 17%;
+    filter: blur(140px);
+    z-index: -1;
 
-.visible {
-    display: flex !important;
 }
 
 .questions {
-    /* height: 100%; */
     position: absolute;
     transform: scale(0.9);
     translate: 0 -15%;
