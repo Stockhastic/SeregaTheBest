@@ -10,7 +10,6 @@ body {
     bottom: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 audio {
     /* position: absolute; */
     left: 1rem;
@@ -19,7 +18,6 @@ audio {
     padding: 0.1rem;
     /* translate: -18% 0; */
 }
-
 .songlist {
     scale: 0.7;
     filter: opacity(0.95);
@@ -32,12 +30,10 @@ audio {
     bottom: -2%;
     /* width: 370px */
 }
-
 .songlist>h2 {
     text-transform: uppercase;
     text-align: center;
 }
-
 .songlist__item {
     padding: 0.4rem;
     margin-left: 1rem;
@@ -45,7 +41,6 @@ audio {
     align-items: center;
     column-gap: 20px;
 }
-
 .sergaTheBest {
     display: block;
     font-size: 8rem;
@@ -54,9 +49,7 @@ audio {
     animation-play-state: running;
     text-shadow: 5px 5px 20px #ffcc25;
     color: #ffcc25;
-
 }
-
 .orb {
     position: absolute;
     background-color: #ffffff;
@@ -68,14 +61,12 @@ audio {
     z-index: -1;
 
 }
-
 .questions {
     position: absolute;
     transform: scale(0.9);
     translate: 0 -15%;
     animation: 50s linear face infinite;
 }
-
 @keyframes rotation {
     from {
         transform: rotate(0deg);
@@ -85,7 +76,6 @@ audio {
         transform: rotate(360deg);
     }
 }
-
 @keyframes face {
     from {
         filter: opacity(0);
