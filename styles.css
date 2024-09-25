@@ -1,6 +1,7 @@
 body {
     background-image: url(backg.jpg);
-    background-size: 400px;
+    background-size: 80%;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -72,7 +73,7 @@ audio {
     position: absolute;
     transform: scale(0.9);
     translate: 0 -15%;
-    animation: 100s linear face infinite;
+    animation: 50s linear face infinite;
 }
 
 @keyframes rotation {
